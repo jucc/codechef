@@ -11,11 +11,9 @@
 int main(char **argv) {
 
     int guess = 0;
-    scanf("%d", &guess);
 
-    while (guess != ANSWER) {
+    while (scanf ("%d", &guess) && guess != ANSWER) {
         printf ("%d\n", guess);
-	scanf ("%d", &guess);
     }
     return 0;
 }
