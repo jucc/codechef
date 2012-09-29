@@ -1,4 +1,4 @@
 codechef
 ========
 
-codechef.com practice problemas
+resolution for codechef.com practice problems
