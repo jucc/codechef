@@ -1,7 +1,9 @@
-"   codechef.com - Practice problem - Easy
+"   
+    codechef.com - Practice problem - Easy
     Life, the Universe and Everything - http://www.codechef.com/problems/TEST
     Language - Smalltalk
-    Juliana Correa"
+    Juliana Correa
+"
 
 |guess|
 [   guess := stdin nextLine asInteger.
