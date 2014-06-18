@@ -5,12 +5,9 @@
     Juliana Correa
 """
 
+from sys import stdin
+
 n, k = map(lambda x: int(x), raw_input().split())
-print n, k
-i = div = x = 0
-while i < n:
-   x = int(raw_input())
-   if x % k == 0:
-      div += 1
-   i += 1
-print div
+numlist = [int(x) for x in stdin.read().strip().split('\n')]
+divs = filter(lambda x: x % k == 0, numlist)
+print len(divs)
