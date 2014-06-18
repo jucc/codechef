@@ -8,12 +8,10 @@
 #include <stdio.h>
 #define ANSWER 42
  
-int main(char **argv) {
+void main() {
 
-    int guess = 0;
+    int guess;
 
-    while (scanf ("%d", &guess) && guess != ANSWER) {
+    while (scanf ("%d", &guess) && guess != ANSWER) 
         printf ("%d\n", guess);
-    }
-    return 0;
 }
