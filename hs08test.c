@@ -14,11 +14,12 @@ int main() {
     float bal;
      
     scanf ("%d %f", &wd, &bal);
+    float amount = wd + TAX;
      
-    if ( wd % 5 != 0 || wd + TAX > bal )
-        printf ("%.02f\n", bal);
-    else
-        printf ("%.02f\n", bal - wd - TAX);
-        
+    if ((wd % 5 == 0) && (amount <= bal))
+        bal -= amount;
+    
+    printf ("%.02f\n", bal);
+
     return 0;
 } 
