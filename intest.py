@@ -8,6 +8,5 @@
 from sys import stdin
 
 n, k = map(lambda x: int(x), raw_input().split())
-numlist = [int(x) for x in stdin.read().strip().split('\n')]
-divs = filter(lambda x: x % k == 0, numlist)
+divs = filter(lambda x: int(x) % k == 0, stdin.read().strip().split('\n'))
 print len(divs)
